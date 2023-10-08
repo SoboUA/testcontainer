@@ -1,0 +1,17 @@
+package avenga.poc.testcontainer;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class TestcontainerApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TestcontainerApplication.class, args);
+	}
+
+	public static SpringApplication createSpringApplication() {
+		return new SpringApplication(TestcontainerApplication.class);
+	}
+
+}
